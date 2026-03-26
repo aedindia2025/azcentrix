@@ -1,0 +1,151 @@
+.clients-section {
+  position: relative;
+  background: #eef2f9;
+  padding: 100px 0 90px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ── Dot map background ── */
+.clients-dotmap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  opacity: 0.18;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Heading ── */
+.clients-header {
+  position: relative;
+  z-index: 2;
+  padding: 0 64px;
+  margin-bottom: 64px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s var(--ease), transform 0.75s var(--ease);
+}
+.clients-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clients-header h2 {
+  font-family: var(--font);
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.clients-count {
+  position: relative;
+  display: inline-block;
+  color: var(--primary);
+}
+
+.underline-svg {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  overflow: visible;
+}
+
+/* ── Marquee rows ── */
+.clients-marquee {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.75s var(--ease) 0.25s, transform 0.75s var(--ease) 0.25s;
+}
+.clients-marquee.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.marquee-row {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fade edges */
+.marquee-row::before,
+.marquee-row::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 140px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-row::before { left: 0;  background: linear-gradient(to right, #eef2f9, transparent); }
+.marquee-row::after  { right: 0; background: linear-gradient(to left,  #eef2f9, transparent); }
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: scrollLeft 28s linear infinite;
+}
+.marquee-track.reverse {
+  animation: scrollRight 32s linear infinite;
+}
+.marquee-track:hover,
+.marquee-track.reverse:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft  { from { transform: translateX(0); }    to { transform: translateX(-50%); } }
+@keyframes scrollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+
+/* ── Client logo card ── */
+.client-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  margin: 0 8px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,88,191,0.1);
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  white-space: nowrap;
+}
+.client-logo:hover {
+  background: #fff;
+  border-color: rgba(0,88,191,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,88,191,0.12);
+}
+
+.client-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.client-name {
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 700;
+  color: #6b7a99;
+  letter-spacing: -0.2px;
+  transition: color 0.25s;
+}
+.client-logo:hover .client-name {
+  color: var(--primary);
+}
