@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './Services.css'
+import hrmsImg from '../assets/HRMS.jpeg'
 
 const industries = [
   {
@@ -7,6 +8,7 @@ const industries = [
     desc: 'Comprehensive Human Resource Management System to streamline payroll, attendance, leave, and employee lifecycle from a single platform.',
     gradient: 'linear-gradient(135deg, #0a3d7c 0%, #061d3f 100%)',
     accent: '#60a5fa',
+    img: hrmsImg,
   },
   {
     title: 'CRM',
@@ -102,8 +104,13 @@ function IndustryRow({ item, index }) {
           <p>{item.desc}</p>
         </div>
         <div className="ind-img" style={{ background: item.gradient }}>
-          <div className="ind-img-lines" style={{ '--accent': item.accent }} />
-          <span className="ind-img-label" style={{ color: item.accent }}>{item.title[0]}</span>
+          {item.img
+            ? <img src={item.img} alt={item.title} className="ind-img-photo" />
+            : <>
+                <div className="ind-img-lines" style={{ '--accent': item.accent }} />
+                <span className="ind-img-label" style={{ color: item.accent }}>{item.title[0]}</span>
+              </>
+          }
         </div>
       </div>
     </>
