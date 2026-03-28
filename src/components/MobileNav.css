@@ -1,0 +1,38 @@
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background: var(--white);
+  z-index: 190;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 8%;
+  gap: 6px;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-nav.show { transform: translateX(0); }
+.mobile-nav a {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.18s;
+  letter-spacing: -0.02em;
+}
+.mobile-nav a:hover { color: var(--green); }
+.mobile-close {
+  position: absolute;
+  top: 20px; right: 5%;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  width: 40px; height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+}

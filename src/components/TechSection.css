@@ -1,0 +1,22 @@
+.tech-section { background: var(--ink); }
+.tech-section .eyebrow { color: var(--teal); }
+.tech-section .eyebrow::before { background: var(--teal); }
+.tech-section .h2 { color: #fff; }
+.tech-section .h2 .c { color: var(--teal); }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 56px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.tech-cell { background: var(--ink); padding: 40px 36px; transition: background 0.2s; }
+.tech-cell:hover { background: #1a2333; }
+.tech-num { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; color: var(--teal); letter-spacing: 0.1em; margin-bottom: 20px; }
+.tech-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+.tech-title { font-family: 'Familjen Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: -0.02em; }
+.tech-desc { font-size: 13.5px; color: rgba(255,255,255,0.45); line-height: 1.65; }

@@ -1,0 +1,28 @@
+.stats-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border2);
+  padding: 40px 5%;
+}
+.stats-bar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.stat-block {
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid var(--border2);
+}
+.stat-block:last-child { border-right: none; }
+.stat-num {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.stat-accent { color: var(--green); }
+.stat-label { font-size: 13.5px; color: var(--ink3); margin-top: 6px; font-weight: 400; }
