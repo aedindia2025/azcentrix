@@ -18,7 +18,7 @@
   cursor: default;
 }
 .wp:hover { background: var(--bg); border-color: var(--border); }
-.wp-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; background: var(--green-light); }
+.wp-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: var(--green-light); }
 .wp h4 { font-family: 'Familjen Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 5px; letter-spacing: -0.01em; }
 .wp p { font-size: 13.5px; color: var(--ink2); line-height: 1.6; }
 
@@ -31,7 +31,7 @@
 .pc-body { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
 .pc-module { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; transition: all 0.2s; }
 .pc-module:hover { border-color: var(--green-mid); background: var(--green-light); }
-.pcm-icon { width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+.pcm-icon { width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .pcm-info { flex: 1; }
 .pcm-name { font-size: 13px; font-weight: 700; color: var(--ink); }
 .pcm-sub { font-size: 11.5px; color: var(--ink3); margin-top: 2px; }

@@ -17,6 +17,6 @@
 .tech-cell { background: var(--ink); padding: 40px 36px; transition: background 0.2s; }
 .tech-cell:hover { background: #1a2333; }
 .tech-num { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; color: var(--teal); letter-spacing: 0.1em; margin-bottom: 20px; }
-.tech-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+.tech-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; background: rgba(255,255,255,0.07); color: var(--teal); }
 .tech-title { font-family: 'Familjen Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: -0.02em; }
 .tech-desc { font-size: 13.5px; color: rgba(255,255,255,0.45); line-height: 1.65; }

@@ -1,3 +1,4 @@
+import { Phone } from 'lucide-react'
 import './CTASection.css'
 
 export default function CTASection() {
@@ -15,7 +16,7 @@ export default function CTASection() {
                 <path d="M3 7.5h9M8.5 4l3.5 3.5L8.5 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
-            <button className="btn-cta-outline">📞 Talk to Sales</button>
+            <button className="btn-cta-outline"><Phone size={14} strokeWidth={1.8} style={{ marginRight: 6, verticalAlign: 'middle' }} />Talk to Sales</button>
           </div>
         </div>
       </div>

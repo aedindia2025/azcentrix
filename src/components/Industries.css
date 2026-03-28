@@ -13,7 +13,7 @@
 .ind-card::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
 .ind-card:hover::before { transform: scaleX(1); }
 .ind-card:hover { border-color: var(--border); box-shadow: var(--shadow-md); }
-.ind-icon { font-size: 34px; margin-bottom: 14px; display: block; }
+.ind-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
 .ind-name { font-family: 'Familjen Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 7px; letter-spacing: -0.01em; }
 .ind-desc { font-size: 13px; color: var(--ink2); line-height: 1.55; }
 .ind-chip { display: inline-block; margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 500; color: var(--green3); background: var(--green-light); border: 1px solid var(--green-mid); padding: 3px 9px; border-radius: 5px; }

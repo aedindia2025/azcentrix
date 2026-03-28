@@ -1,3 +1,4 @@
+import { Rocket, ShieldCheck, Users, Layers, BarChart2, ScanFace } from 'lucide-react'
 import './Hero.css'
 
 function scrollTo(id) {
@@ -33,7 +34,7 @@ export default function Hero() {
 
         <div className="hero-visual">
           <div className="float-badge fb-top">
-            <div className="fb-icon">🚀</div>
+            <div className="fb-icon" style={{ color: '#0f9b6e' }}><Rocket size={16} strokeWidth={1.6} /></div>
             <div className="fb-text">
               <strong>Deploy in days</strong>
               <span>Zero-friction onboarding</span>
@@ -63,13 +64,13 @@ export default function Hero() {
               </div>
               <div className="dash-list">
                 {[
-                  { icon: '👥', bg: '#e6f6f1', name: 'HRMS', statusClass: 'status-live', label: '● Live' },
-                  { icon: '🔥', bg: '#eff6ff', name: 'Next-Gen Firewall', statusClass: 'status-live', label: '● Live' },
-                  { icon: '📊', bg: '#fef9ec', name: 'ERP Analytics v3', statusClass: 'status-beta', label: '◎ Beta' },
-                  { icon: '🫠', bg: '#fdf2f8', name: 'Face Recognition', statusClass: 'status-live', label: '● Live' },
+                  { Icon: Users,      color: '#0f9b6e', bg: '#e6f6f1', name: 'HRMS',             statusClass: 'status-live', label: '● Live' },
+                  { Icon: Layers,     color: '#2563eb', bg: '#eff6ff', name: 'Next-Gen Firewall', statusClass: 'status-live', label: '● Live' },
+                  { Icon: BarChart2,  color: '#f59e0b', bg: '#fef9ec', name: 'ERP Analytics v3',  statusClass: 'status-beta', label: '◎ Beta' },
+                  { Icon: ScanFace,   color: '#7c3aed', bg: '#fdf2f8', name: 'Face Recognition',  statusClass: 'status-live', label: '● Live' },
                 ].map(item => (
                   <div key={item.name} className="dash-list-item">
-                    <div className="dli-icon" style={{ background: item.bg }}>{item.icon}</div>
+                    <div className="dli-icon" style={{ background: item.bg, color: item.color }}><item.Icon size={13} strokeWidth={1.8} /></div>
                     <span className="dli-name">{item.name}</span>
                     <span className={`dli-status ${item.statusClass}`}>{item.label}</span>
                   </div>
@@ -78,7 +79,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="float-badge fb-bottom">
-            <div className="fb-icon">🛡️</div>
+            <div className="fb-icon" style={{ color: '#2563eb' }}><ShieldCheck size={16} strokeWidth={1.6} /></div>
             <div className="fb-text">
               <strong>99.98% Uptime</strong>
               <span>Enterprise SLA guaranteed</span>

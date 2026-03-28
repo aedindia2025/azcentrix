@@ -204,7 +204,7 @@
   border-radius: 8px;
   font-size: 12.5px;
 }
-.dli-icon { width: 28px; height: 28px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
+.dli-icon { width: 28px; height: 28px; border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .dli-name { font-weight: 600; color: var(--ink); flex: 1; }
 .dli-status { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 500; padding: 2px 8px; border-radius: 4px; }
 .status-live { background: var(--green-light); color: var(--green3); }
@@ -222,7 +222,7 @@
 }
 .fb-top { top: -20px; right: -30px; animation: floatY 5s ease-in-out infinite; }
 .fb-bottom { bottom: -20px; left: -30px; animation: floatY 5s 2.5s ease-in-out infinite; }
-.fb-icon { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 16px; background: var(--green-light); flex-shrink: 0; }
+.fb-icon { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: var(--green-light); flex-shrink: 0; }
 .fb-text { font-size: 12px; }
 .fb-text strong { display: block; font-weight: 700; color: var(--ink); font-size: 13px; }
 .fb-text span { color: var(--ink3); }
