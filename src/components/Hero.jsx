@@ -10,10 +10,10 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-layout">
         <div className="hero-copy">
-          <div className="hero-badge">
+          {/* <div className="hero-badge">
             <div className="badge-dot">✦</div>
             <span>Trusted by 500+ enterprises in 28 countries</span>
-          </div>
+          </div> */}
           <h1 className="hero-headline">
             The Operating System<br />for Your <span className="hl">Enterprise</span>
           </h1>
@@ -27,7 +27,7 @@ export default function Hero() {
                 <path d="M3 7.5h9M8.5 4l3.5 3.5L8.5 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
-            <button className="btn-outline" onClick={() => scrollTo('contact')}>Schedule a Demo</button>
+            {/* <button className="btn-outline" onClick={() => scrollTo('contact')}>Schedule a Demo</button> */}
           </div>
           
         </div>

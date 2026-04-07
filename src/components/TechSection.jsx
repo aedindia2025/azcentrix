@@ -6,7 +6,7 @@ const TECHS = [
   { num: '02', Icon: Bot,             title: 'Embedded AI Engine',       desc: 'ML models for predictive analytics, anomaly detection, face recognition, and process automation baked into every product layer.' },
   { num: '03', Icon: Lock,            title: 'Zero-Trust Security',      desc: 'Identity-first architecture with MFA, TLS 1.3, SOC monitoring, and real-time threat intelligence at every network layer.' },
   { num: '04', Icon: Zap,             title: 'Event-Driven Pipeline',    desc: 'Apache Kafka backbone ensures millisecond data propagation between all modules — from RFID scan to financial ledger update.' },
-  { num: '05', Icon: Plug,            title: 'Open Integration Layer',   desc: 'REST and GraphQL APIs with full SDKs, webhooks, and a marketplace of 200+ pre-built connectors for third-party systems.' },
+  { num: '05', Icon: Plug,            title: 'Open Integration Layer',   desc: 'Offers RESTful and Fast APIs, complete SDKs, webhooks, and a marketplace featuring 200+ pre-built connectors for third-party integrations.' },
   { num: '06', Icon: ClipboardCheck,  title: 'Compliance Automation',    desc: 'GDPR, PDPA, HIPAA, and SOC 2 frameworks enforced automatically, with data residency controls and audit-ready reporting.' },
 ]
 

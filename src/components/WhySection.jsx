@@ -2,11 +2,11 @@ import { Link2, Zap, ShieldCheck, BarChart2, Globe, Users, Building2, Layers, Vi
 import './WhySection.css'
 
 const WHY_POINTS = [
-  { Icon: Link2,      color: '#0f9b6e', title: 'Native Cross-Module Integration', desc: 'All 50+ products share a common data layer. HR data flows to Payroll to ERP to Analytics — without a single API call from your team.' },
-  { Icon: Zap,        color: '#f59e0b', title: 'Go Live in Days, Not Months',      desc: 'Cloud-native deployment, pre-configured industry templates, and dedicated onboarding engineers get you operational fast.' },
-  { Icon: ShieldCheck,color: '#2563eb', title: 'Zero-Trust Security by Default',   desc: 'ISO 27001 certified. Every module ships with role-based access, audit trails, MFA, and end-to-end encryption — no add-ons needed.' },
-  { Icon: BarChart2,  color: '#7c3aed', title: 'Unified Intelligence Dashboard',   desc: 'Predictive analytics and AI-driven insights surface across all modules — from headcount forecasting to network anomaly detection.' },
-  { Icon: Globe,      color: '#0891b2', title: 'Global Compliance Ready',           desc: 'GDPR, PDPA, SOC 2, and region-specific regulatory frameworks are built in, not bolted on.' },
+  { Icon: Link2,       color: '#0f9b6e', title: 'Native Cross-Module Integration', desc: 'All 50+ products share a common data layer. HR data flows to Payroll to ERP to Analytics — without a single API call from your team.' },
+  { Icon: Zap,         color: '#f59e0b', title: 'Go Live in Days, Not Months',      desc: 'Cloud-native deployment, pre-configured industry templates, and dedicated onboarding engineers get you operational fast.' },
+  { Icon: ShieldCheck, color: '#2563eb', title: 'Zero-Trust Security by Default',   desc: 'ISO 27001 certified. Every module ships with role-based access, audit trails, MFA, and end-to-end encryption — no add-ons needed.' },
+  { Icon: BarChart2,   color: '#7c3aed', title: 'Unified Intelligence Dashboard',   desc: 'Predictive analytics and AI-driven insights surface across all modules — from headcount forecasting to network anomaly detection.' },
+  { Icon: Globe,       color: '#0891b2', title: 'Global Compliance Ready',           desc: 'GDPR, PDPA, SOC 2, and region-specific regulatory frameworks are built in, not bolted on.' },
 ]
 
 const MODULES = [

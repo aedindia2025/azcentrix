@@ -27,10 +27,10 @@ export default function Navbar({ onHamburger }) {
         <a className="nav-link" href="#tech">Technology</a>
         <a className="nav-link" href="#testimonials">Clients</a>
       </div>
-      <div className="nav-right">
+      {/* <div className="nav-right">
         <button className="btn-text">Sign In</button>
         <button className="btn-nav-cta" onClick={() => scrollTo('contact')}>Request Demo →</button>
-      </div>
+      </div> */}
       <button className="hamburger" onClick={onHamburger}>
         <span /><span /><span />
       </button>
